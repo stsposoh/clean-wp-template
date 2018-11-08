@@ -1,0 +1,232 @@
+*
+    box-sizing border-box
+
+
+html
+body
+    height 100%
+
+
+body
+    position: relative
+    margin 0
+    min-width: 320px
+    font-family font_family
+    font-size font_size
+    font-weight font-weight
+    color color_text
+    line-height font_line_height
+    overflow-x: hidden
+    overflow-y auto
+    font-smoothing antialiased
+    scroll-behavior smooth
+    background-color white
+
+
+img
+    max-width 100%
+    height: auto
+
+
+*::-webkit-input-placeholder
+*:-moz-placeholder
+*::-moz-placeholder
+*:-ms-input-placeholder
+    color: color_text_light
+    opacity: 1
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+
+
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+
+input[type="text"]
+input[type="tel"]
+input[type="email"]
+textarea
+    display: inline-block;
+    width: 23%;
+    padding-left: 10px;
+    margin: 5px 15px 0 0px;
+    outline: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 39px;
+
+
+input[type="submit"]
+    border 0
+    width 25%
+    padding: 13px 0
+    outline 0
+    font-size: 18px
+    font-weight bold
+    transition all .5s ease
+    background-color accent-color
+    color white !important
+    cursor pointer
+
+    &:hover
+        color accent-color !important
+
+
+.ajax-loader
+    display none !important
+
+
+.underline
+    position relative
+    display inline-block
+
+    &:after
+        position absolute
+        content ''
+        bottom 2px
+        left 0
+        width 100%
+        height 1px
+
+    &--white
+        &:after
+            background-color white
+
+
+.sect-offset
+    padding 35px 0
+
+
+.btn
+    display inline-block
+    text-transform: uppercase;
+    font-weight: bold;
+    transition all .5s ease
+    min-width: 110px;
+    margin: 3px 4px;
+    border: 1px solid #efefef
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 7px 20px;
+    text-align: center;
+
+    @media mq_desktop
+        margin: 10px 4px;
+
+    &:hover
+        background-color accent-color
+        color white
+
+    &--green
+        background-color accent-color
+        color white !important
+
+        &:hover
+            background-color white
+            color accent-color !important
+
+    &--small
+        font-size: 12px;
+        margin: 0 10px;
+        text-align: center;
+        padding: 4px 15px 3px;
+
+    &--black
+        color: #fff !important;
+        background: #2f2f2f;
+
+    &--centered
+        margin: auto;
+        width: 189px;
+        display: block;
+
+
+em
+    font-style italic
+
+strong
+    font-weight bold
+
+p
+    margin-top 0
+    margin-bottom 10px
+
+ul
+    normalize_list()
+
+
+a
+    &:link
+        color #8d8d8d
+        text-decoration none
+    &:visited
+        outline-color: transparent;
+        color #8d8d8d
+    &:focus
+        outline-color: transparent;
+    &:hover
+        color accent-color
+        text-decoration none
+    &:active
+        outline-color: transparent;
+        color #8d8d8d
+
+.active
+    color color_text
+
+
+
+
+
+
+
+h1
+    font-size: 27px;
+    margin: 40px 0;
+    font-weight: bold;
+
+
+h3.fw-special-title
+    font-size: 25px;
+    color accent-color
+
+
+.fw-team
+    h3
+        font-size: 20px !important;
+        line-height: 27px;
+        margin: 10px 0 5px 0;
+
+
+
+
+
+.sect-no-offset
+    &>div
+        padding 0
+
+
+.sect-no-padding
+    padding 0
+
+
+
+.bg-grey
+    background-image: url("/wp-content/themes/active-theme/img/header-bg.png")
+
+
+.bg-white
+    background-color white
+
+
+.bg-shadow
+    box-shadow: 0px 8px 6px -4px #808080;
+    margin-bottom: 10px;
+
+
+.text-center
+    text-align center

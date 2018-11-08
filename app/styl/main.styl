@@ -1,0 +1,447 @@
+//background-image: url("/wp-content/themes/active-theme/img/header-bg.png")
+
+//@media (min-width: 768px)
+
+.header
+    &__top-row
+        padding: 15px 0;
+        border-bottom: 1px solid #ddddde;
+
+    &__left
+        margin-top: 46px;
+
+        &-top
+            font-weight bold
+            font-size: 18px;
+            margin: 0;
+            line-height: 21px;
+            display: block;
+
+        &-btm
+            font-size: 18px;
+            margin: 0;
+            line-height: 21px;
+
+    &__center
+        text-align: center;
+        background-color: white
+        border-radius: 50%;
+        padding: 24px 23px;
+        border: 2px solid accent-color
+
+        &-top
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 24px;
+
+        &-middle
+            display: inline-block;
+            font-size: 33px;
+            color: accent-color !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 37px;
+
+        &-bottom
+            display: block;
+            font-size: 18px;
+            line-height: 19px;
+            color: color_text_light
+
+    &__right
+        text-align: right;
+        margin-top: 32px;
+
+        &-top
+            display: block;
+            font-size: 21px;
+            line-height: 30px;
+
+        &-middle
+            display: block;
+            font-size: 25px;
+            color: black !important;
+            line-height: 29px;
+            font-weight: bold;
+
+        &-bottom
+            line-height: 27px;
+            font-size: 19px;
+
+    &__menu
+        border-top: 1px solid white;
+        padding: 2px 0;
+
+        ul.menu
+            normalize_list()
+            text-align center
+            font-size 0
+
+            li
+                display inline-block
+                margin: 0 9px
+
+                a
+                    display block
+                    border-radius: 0;
+                    color: black;
+                    font-size: 19px;
+                    padding: 3px 10px;
+
+                &.current_page_item a
+                    border-radius: 5px;
+                    color: #fff;
+                    background: #2f2f2f;
+                    font-size: 19px;
+                    padding: 3px 10px;
+
+    &__further-menu
+        background-color rgba(47, 47, 47, 0.8)
+        position: relative;
+        z-index: 20;
+
+        ul.menu
+            normalize_list()
+            text-align center
+            font-size 0
+
+            li
+                display inline-block
+                margin: 0 9px
+
+                a
+                    display block
+                    color: #ffd7b5;
+                    line-height: 40px;
+                    font-size: 18px;
+                    padding: 0 10px;
+
+                &.current_page_item a
+                    background: #ff4e00;
+                    color white
+
+
+.slider
+    margin-top -49px
+
+
+.announce
+    margin-bottom 30px
+    text-align center
+    position relative
+
+    &:hover
+        .announce__footer
+            color white
+            transition all .4s ease
+
+    &__link
+        display block
+        position relative
+        line-height 0
+        overflow hidden
+        max-width 455px
+
+        &:before
+            position absolute
+            content ''
+            top 0
+            left 0
+            right 0
+            bottom 0
+            z-index 3
+            background-image: linear-gradient(to top, #323232, rgba(255, 215, 0, 0.19))
+
+        img
+            display block
+            transition all .4s ease
+
+        &:hover
+
+            img
+                transform scale(1.5)
+                transition all .4s ease
+
+    &__footer
+        display inline-block
+        width 100%
+        font-size 0
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color #b6b6b6
+        font-weight bold
+        z-index 4
+        transition all .4s ease
+
+        &-title
+            display inline-block
+            text-align left
+            font-size: 16px;
+            line-height: 46px;
+
+
+.case
+    text-align center
+    height: 225px;
+    overflow: hidden;
+
+    @media mq_desktop
+        height: 200px;
+
+        @media mq_wide_desktop
+            height: 250px;
+
+    &:hover
+        .case__overlay
+            background-color rgba(0, 0, 0, 0.72);
+
+        .case__img
+            transform: scale(1.3);
+
+        .case__overlay-title
+            color accent-color
+            transition: all 0.5s ease;
+
+    &__overlay
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.45);
+        transition: all 0.5s ease;
+
+    &__img
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.5s ease;
+
+    &__overlay-content
+        margin: 0;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+
+    &__overlay-title
+        font-size: 19px;
+        line-height: 22px;
+        color: #eaeaea;
+        transition: all 0.5s ease;
+
+    &__overlay-line
+        display: inline-block;
+        height: 6px;
+        background-color: accent-color
+        width: 142px;
+        margin: 5px 0;
+        transform: skewX(-12deg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toggle-mnu
+    position: absolute;
+    top: 0
+    right 0
+    display: block
+    width: 28px
+    height: 28px
+    margin: 11px 0 0
+
+    span:after, span:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 9px
+
+    span:after
+        top: 18px
+
+    span
+        position: relative
+        display: block
+
+    span, span:after, span:before
+        width: 100%
+        height: 2px
+        background-color: color_text
+        transition: all 0.3s
+        backface-visibility: hidden
+        border-radius: 2px
+
+
+    &.on span
+        background-color: transparent
+
+    &.on span:before
+        transform: rotate(45deg) translate(-1px, 0px)
+
+    &.on span:after
+        transform: rotate(-45deg) translate(6px, -7px)
+
+
+.service
+    padding-bottom 15px
+
+    &__link
+        color accent-color !important
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+
+    &__list
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 30px;
+        color black
+
+        ul
+            normalize_list()
+
+
+.footer
+    padding: 50px 0;
+    text-align: right;
+    background-image: url("/wp-content/themes/active-theme/img/footer_bg_women.png"), url("/wp-content/themes/active-theme/img/footer_bg.png")
+    background-repeat: no-repeat, repeat;
+    background-position: left bottom;
+    background-size: contain;
+
+    &__title
+        color: accent-color;
+        font-size: 33px;
+        font-weight: bold;
+
+    &__phone
+        font-size 28px
+        font-weight: bold;
+
+    &__nav
+
+        ul
+            normalize_list()
+            clear_display_inlines()
+
+            li
+                margin-left: 9px
+
+                a
+                    display block
+                    color: black;
+                    font-size: 19px;
+                    padding-left: 25px;
+
+                &.current_page_item a
+                    color: #fff;
+
+    &__nav-further
+
+        ul
+            normalize_list()
+            clear_display_inlines()
+
+            li
+                margin-left: 9px
+
+                a
+                    display block
+                    color: #ffd7b5;
+                    line-height: 40px;
+                    font-size: 18px;
+                    padding-left: 14px;
+
+                &.current_page_item a
+                    background: #ff4e00;
+                    color white
+
+    &__social
+        normalize_list()
+        clear_display_inlines()
+
+        li
+            margin-right 10px
+
+            a
+                display block
+                width 43px
+
+    &__copy
+        //
+
+
+
+
+
+
+.accordion
+    transform: translateZ(0);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    & > .accordion-toggle
+        position: absolute;
+        opacity: 0;
+        display: none;
+
+    & > label
+        position: relative;
+        background-color: #ffe1a3;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        font-size: 15px;
+        font-weight: 700;
+        border-top: 1px solid #ddd;
+        cursor: pointer;
+        color: #f54949;
+        text-decoration: underline;
+
+        &:after
+            content: '\f078';
+            position: absolute;
+            top: 0
+            right: 20px;
+            font-family: fontawesome;
+            transform: rotate(90deg);
+            transition: .3s transform;
+
+    & > section
+        height: 0;
+        transition: .3s all;
+        overflow: hidden;
+
+        p
+            margin: 15px 0;
+            padding: 0 20px;
+            font-size: 17px;
+            line-height: 1.5;
+
+    & > .accordion-toggle:checked ~ label:after
+        transform: rotate(0deg);
+
+    & > .accordion-toggle:checked ~ section
+        height 120px
+
+
+
+
+
